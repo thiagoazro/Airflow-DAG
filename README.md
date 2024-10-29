@@ -1,11 +1,11 @@
 # Airflow-DAG
 Neste projeto foi implementada uma DAG de orquestração de tarefas utilizando o Apache-Airflow. 
 
-Simulando um ambiente real de empresa, foram gerados dados por uma arquivo JSON de uma turbina eólica a cada intervalo de tempo definido.
+Simulando um ambiente real de empresa, foram gerados dados por um arquivo JSON de uma turbina eólica a cada intervalo de tempo definido.
 
 Como engenheiro de dados, utilizei um FileSensor para monitorar um diretório e disparar o workflow a cada vez que o arquivo JSON fosse gerado pela turbina eólica, iniciando o processo.
 
-Depois, utilizei o Python Operator para ler o arquivo JSON, separar as variáveis existentes no documento e inserir cada variável em objetos Xcom para compartilharcom as demais tarefas do pipeline, e apagar o arquvio JSON gerado esperando o novo documeno a ser gerado no intervalo de tmepo definido.
+Depois, utilizei o Python Operator para ler o arquivo JSON, separar as variáveis existentes no documento e inserir cada variável em objetos Xcom para compartilhar com as demais tarefas do pipeline, e apagar o arquvio JSON gerado esperando o novo documeno a ser gerado no intervalo de tmepo definido.
 
 Posteriormente as tarefas se dividiram em dois grupos.
 
